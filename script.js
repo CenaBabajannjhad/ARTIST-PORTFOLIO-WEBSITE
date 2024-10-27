@@ -10,7 +10,8 @@ themeToggler.addEventListener("click", () => {
   const menuImgBtn = document.querySelector(".hamburger-img-btn");
 
   document.body.classList.toggle("dark-mode");
-  document.querySelectorAll("a").forEach((item) => item.classList.toggle("text-black"));
+  document.querySelectorAll("a").forEach((item) => item.classList.toggle("text-dark-mode"));
+  document.querySelectorAll("nav a").forEach((item) => item.classList.toggle("text-black"));
   document.querySelectorAll(".link-arrow").forEach((item) => item.classList.toggle("dark-mode"));
   document.querySelector(".section-4-items > h2").classList.toggle("text-dark-mode");
   document.querySelector(".section-4-items > p").classList.toggle("text-dark-mode");
